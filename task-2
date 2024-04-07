@@ -1,0 +1,21 @@
+Differences Between Document and Window Objects in JavaScript
+
+In the vast ecosystem of web development, JavaScript serves as the cornerstone for creating dynamic and interactive experiences. Central to this capability is the Document Object Model (DOM), a hierarchical representation of HTML documents that enables manipulation and traversal of web page elements. Within the DOM, two essential objects play distinct yet interconnected roles: the Document object and the Window object. In this blog, we'll unravel the disparities between these objects, elucidating their functionalities, relationships, and applications in modern web development.
+
+Document Object:
+The Document object serves as an interface to the HTML document within which JavaScript is executing. It represents the entire web page as a tree structure, encompassing elements such as <html>, <head>, <body>, and all other HTML tags and their respective attributes. Key characteristics of the Document object include:
+
+DOM Manipulation: The Document object provides methods and properties for dynamically accessing, creating, modifying, and deleting elements within the document. Developers can use methods like getElementById(), querySelector(), and createElement() to interact with specific elements based on their IDs, CSS selectors, or tag names.
+
+Events Handling: Document-level events, such as DOMContentLoaded, click, or keypress, can be attached and handled using event listeners. These events enable developers to respond to user interactions, page loading events, or other triggers occurring within the document.
+
+Tree Structure: The Document object represents the hierarchical structure of the HTML document, with each element organized as parent-child relationships. Methods like childNodes, parentNode, and querySelectorAll() facilitate traversal and navigation within this tree structure.
+
+Window Object:
+The Window object represents the browser window or tab that contains the HTML document. It serves as the global object in client-side JavaScript, providing access to various browser-related functionalities and properties. Key characteristics of the Window object include:
+
+Global Scope: All global JavaScript variables, functions, and objects are attached to the Window object. This means that properties and methods declared without the var, let, or const keywords become properties of the Window object, accessible from anywhere within the script.
+
+Browser Interaction: The Window object offers methods and properties for interacting with the browser environment, such as navigating to URLs (window.location), manipulating the browser history (window.history), and controlling the window dimensions (window.innerWidth, window.innerHeight).
+
+Timers and Intervals: Functions like setTimeout() and setInterval() for executing code after a specified delay or at regular intervals are part of the Window object. These functions facilitate asynchronous programming and event scheduling within JavaScript applications.
